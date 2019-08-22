@@ -10,7 +10,8 @@ export default class Form extends React.Component{
 
     formSubmit = (event) => {
         event.preventDefault();
-        alert(this.state.value)
+        // alert(this.state.value)
+        this.passQueryString(this.state.value);
     }
 
     handleChange = (event) => {
@@ -19,6 +20,10 @@ export default class Form extends React.Component{
                 value:event.target.value
             }
         )
+    }
+
+    passQueryString=(queryString)=>{
+        this.props.handleQuery(queryString)
     }
 
     render(){
