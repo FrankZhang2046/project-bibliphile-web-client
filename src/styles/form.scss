@@ -1,0 +1,16 @@
+.form-container{
+
+}
+
+.form{
+    &--input{
+        width:200px;
+    }
+
+    &--submit{
+        width: 100px;
+        background-color: red;
+        height: 20px;
+        color:white;
+    }
+}

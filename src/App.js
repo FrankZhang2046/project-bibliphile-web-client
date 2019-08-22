@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
+import Main from './Components/Main/main'
 
 const App =() =>{
   return (
     <div className="App">
-      <p>web client is now a go</p>
+      <Main />
     </div>
   );
 }
